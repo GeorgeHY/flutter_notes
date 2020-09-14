@@ -3,3 +3,7 @@
 1. 可以通过onGenerateRoute做一些全局的路由跳转前置处理逻辑(使用命名路由方式)
 2. 路由使用命名路由方式
 3. pubspec.yaml 管理依赖库
+4. initState:当Widget第一次插入到Widget树时会被调用，对于每一个State对象，Flutter framework只会调用一次该回调，所以，通常在该回调中做一些一次性的操作，如状态初始化、订阅子树的事件通知等。
+   在build（）方法或didChangeDependencies()中调用BuildContext.dependOnInheritedWidgetOfExactType
+5. 当系统语言Locale或应用主题改变时，Flutter framework会通知widget调用didChangeDependencies()
+
